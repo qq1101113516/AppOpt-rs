@@ -1,0 +1,15 @@
+[package]
+name = "appopt"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+default-run = "appopt"
+publish = false
+
+
+[dependencies]
+aya.workspace = true
+libc.workspace = true
+serde_json = "1"
+signal-hook.workspace = true
+tikv-jemallocator.workspace = true

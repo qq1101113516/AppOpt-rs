@@ -1,0 +1,18 @@
+[package]
+name = "appopt-ebpf"
+version = "2.2.3"
+edition = "2024"
+license = "GPL-2.0-only"
+
+[[bin]]
+name = "appopt"
+path = "src/main.rs"
+
+[dependencies]
+aya-ebpf = "0.2.1"
+
+[profile.release]
+panic = "abort"
+lto = "fat"
+codegen-units = 1
+opt-level = 3
